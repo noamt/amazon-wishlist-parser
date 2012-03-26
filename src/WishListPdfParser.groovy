@@ -41,9 +41,11 @@ class WishListPdfParser {
                     println("${counter}. ${author}|${title}")
                     counter++
                 } else if (token.contains('This title is no longer available')) {
+                    //The title could have been removed from the catalog
                     println("${counter}. A non-available title")
                     counter++
                 }
+                //Don't print ignored tokens
                 //else {
                     //println "Ignored ###${token}###"
                 //}
