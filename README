@@ -1,1 +1,2 @@
 A Groovy script that converts an Amazon wish list PDF export to a simple text format using IText.
+Executed via main where the first and only argument is the path to the source PDF.
